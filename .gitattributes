@@ -1,3 +1,3 @@
 cat .gitattributes
-*.html linguist-language=JavaScript
-*.css linguist-language=JavaScript
+dist/* linguist-vendored
+jquery.js linguist-vendored=true
