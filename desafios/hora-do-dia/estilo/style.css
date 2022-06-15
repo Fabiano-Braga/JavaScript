@@ -17,6 +17,10 @@ section {
     margin: auto;
 }
 
+#msg {
+    font: normal 1.2em Arial;
+}
+
 div {
     text-align: center;
     padding: 8px;
