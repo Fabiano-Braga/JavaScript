@@ -1,2 +1,2 @@
 # JavaScript
- Aqui você pode acompanhar meus projetos e desafios
+ Aqui você pode acompanhar toda minha evolução em JS. 
