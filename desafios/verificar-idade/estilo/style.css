@@ -15,3 +15,10 @@ section {
     margin: auto;
     max-width: 500px;
 }
+
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    font-style: italic;
+    
+}
