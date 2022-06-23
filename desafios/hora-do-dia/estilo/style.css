@@ -1,5 +1,5 @@
 body {
-    background-color: rgba(122, 185, 245, 0.788);
+    background-color: #7ab9f5c9;
 }
 
 header {
@@ -12,7 +12,7 @@ section {
     background-color: white;
     max-width: 500px;
     border-radius: 10px;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.507);
+    box-shadow: 3px 3px 3px #00000081;
     padding: 15px;
     margin: auto;
 }
