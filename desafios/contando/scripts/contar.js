@@ -10,6 +10,13 @@ function contar() {
     }else {
         res.innerHTML = 'Contando...<br>'
 
+        let inicio = Number(Ini.value)
+        let fim = Number(Fim.value)
+        let passo = Number(Passo.value)
+
+        
+        
+
     }
 
 }
