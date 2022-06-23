@@ -1,0 +1,41 @@
+body {
+    background-color: #8454a5b7;
+}
+
+header {
+    text-align: center;
+    font: normal 2rem Arial;
+    color: #ffffff;
+
+}
+
+section {
+background-color: #ffffff;
+max-width: 500px;
+margin: auto;
+padding: 0.6rem;
+border-radius: 0.6rem;
+box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.425);
+}
+
+#txtini {
+    width: 160px;
+}
+
+#txtfim {
+    width: 160px;
+    margin-left: 12px;
+}
+
+#txtpasso {
+    width: 160px;
+    margin-left: 2px;
+}
+
+footer {
+    text-align: center;
+    color: #ffffff;
+    padding-top: 0.6rem;
+    font-style: italic;
+    font-size: 0.9rem;
+}
