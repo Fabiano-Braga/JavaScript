@@ -1,0 +1,30 @@
+body {
+    background-color: #84d3eb;
+}
+
+header {
+    font: normal 0.9rem Arial;
+    text-align: center;
+}
+
+section {
+    background-color: #ffffff;
+    max-width: 500px;
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px;
+    
+
+}
+#tab {
+    width: 165px;
+}
+select {
+
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+    color: #ffffff;
+}
