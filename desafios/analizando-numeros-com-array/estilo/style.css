@@ -19,10 +19,10 @@ section {
 #tab {
     width: 165px;
 }
-select {
 
+#btnzerar {
+    margin-left: 15px;
 }
-
 footer {
     text-align: center;
     font-style: italic;
