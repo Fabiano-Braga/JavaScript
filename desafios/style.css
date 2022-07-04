@@ -1,0 +1,11 @@
+body {
+    background-color: rgb(117, 115, 115);
+}
+
+main {
+    text-align: center;
+    max-width: 500px;
+    background-color: white;
+    border-radius: 10px;
+    
+}
