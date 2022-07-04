@@ -36,7 +36,7 @@ function inLista(n, lista) {
 }
 
 function finalizar() {
-    if (valores.length == 0) {
+if (valores.length == 0) {
         alert('Não é possivel finalizar sem adicionar nenhum valor!')
     }else {
         let tot = valores.length
@@ -44,27 +44,25 @@ function finalizar() {
         let menor = valores[0]
         let soma = 0
         let media = 0
-
-        for(let pos in valores) {
+        for (pos in valores) {
             soma += valores[pos]
-            if(valores[pos])
-        }
-    }
-
-            if(valores[pos] > maior) {
+            if (valores[pos] > maior) {
                 maior = valores[pos]
             }if (valores[pos] < menor) {
                 menor = valores[pos]
+            }
         }
-     }
-    media = soma / tot
-    res.innerHTML += `<p>Ao todo temos ${tot} números cadastrados.</p>`
-    res.innerHTML += ` <p>O maior valor informado foi ${maior} </p>`
-    res.innerHTML += `<p>O menor valor informado foi ${menor} </p>`
-    res.innerHTML += `<p>A média dos valores digitados é ${media}</p>`
+
+        media = soma / tot
+        res.innerHTML = `<p>Ao todo temos ${tot} números cadastrados.</p>`
+        res.innerHTML += `<p>O maior valor informado foi ${maior}.</p>`
+        res.innerHTML += `O menor valor informado foi ${menor}`
+        res.innerHTML += `<p>Somando todos os valores temos ${soma}.</p>`
+        res.innerHTML += `A média dos valores digitados é ${media}`
+
     }
 }
 
-function zerar() {
-
+function Zerar() {
+    location.reload()
 }
