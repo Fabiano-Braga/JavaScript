@@ -3,6 +3,7 @@ body {
 }
 
 main {
+    margin: auto;
     max-width: 500px;
     background-color: white;
     border-radius: 10px;
@@ -15,6 +16,7 @@ main > h1 {
 }
 main h2 {
     color: #a73204b4;
+    text-indent: 8px;
 }
 
 a {
