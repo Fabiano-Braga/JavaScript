@@ -22,3 +22,11 @@ footer {
     font-style: italic;
     
 }
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

@@ -1,6 +1,6 @@
 function carregar() {
     let data = new Date()
-    let hora = 20//data.getHours()
+    let hora = data.getHours()
     let msg = document.getElementById('msg')
     let img = document.getElementById('imagem')
     msg.innerHTML = `Agora são ${hora} horas`

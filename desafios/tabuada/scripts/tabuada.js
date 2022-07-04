@@ -16,9 +16,8 @@ function Tabuada() {
             select.appendChild(tabela)
             cont++
         }
-        
-
-
+        num.value =''
+        num.focus()
     }
     
 }
