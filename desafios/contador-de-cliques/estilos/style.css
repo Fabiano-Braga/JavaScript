@@ -1,0 +1,17 @@
+#btnClick, #btnZerar {
+    width: 150px;
+    height: 80px;
+    line-height: 80px;
+    background-color: #acaaaa;
+    color: #ffffff;
+    display: inline-block;
+    margin: 2px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+button {
+    cursor: pointer;
+    font-size: 12pt;
+    padding: 30px;
+}
