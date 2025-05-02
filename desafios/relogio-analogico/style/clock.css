@@ -1,0 +1,122 @@
+body {
+    background-color: #0f0f1a;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.clock {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+.clock-face {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 50%;
+    transform: rotate(0deg);
+}
+
+.hand {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform-origin: 50% 100%;
+    background-color: #333;
+    border-radius: 5px;
+    transform-origin: 50% 100%; /* Fundamental para girar corretamente */
+}
+
+.hour-hand {
+    width: 8px;
+    height: 80px;
+    margin-left: -4px;
+    background-color: #000;
+}
+
+.min-hand {
+    width: 5px;
+    height: 110px;
+    margin-left: -2.5px;
+    background-color: #555;
+}
+
+
+.second-hand {
+    width: 2px;
+    height: 120px;
+    margin-left: -1px;
+    background-color: #f00;
+}
+
+.center-point {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    margin-left: -6px;
+    margin-top: -6px;
+    background-color: #f00;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.number {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.number1 { transform: rotate(30deg); }
+.number2 { transform: rotate(60deg); }
+.number3 { transform: rotate(90deg); }
+.number4 { transform: rotate(120deg); }
+.number5 { transform: rotate(150deg); }
+.number6 { transform: rotate(180deg); }
+.number7 { transform: rotate(210deg); }
+.number8 { transform: rotate(240deg); }
+.number9 { transform: rotate(270deg); }
+.number10 { transform: rotate(300deg); }
+.number11 { transform: rotate(330deg); }
+.number12 { transform: rotate(360deg); }
+
+/* Ajustando a posição dos números para ficarem alinhados */
+.number span {
+    display: inline-block;
+    transform: rotate(-30deg); /* Compensar a rotação do pai */
+}
+
+.number1 span { transform: rotate(-30deg); }
+.number2 span { transform: rotate(-60deg); }
+.number3 span { transform: rotate(-90deg); }
+.number4 span { transform: rotate(-120deg); }
+.number5 span { transform: rotate(-150deg); }
+.number6 span { transform: rotate(-180deg); }
+.number7 span { transform: rotate(-210deg); }
+.number8 span { transform: rotate(-240deg); }
+.number9 span { transform: rotate(-270deg); }
+.number10 span { transform: rotate(-300deg); }
+.number11 span { transform: rotate(-330deg); }
+.number12 span { transform: rotate(-360deg); }
