@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Tabuada Profissional</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style/gerador.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-calculator"></i> Gerador de Tabuada</h1>
+            <p class="subtitle">Gere tabuadas personalizadas de forma rápida e fácil</p>
+        </header>
+        
+        <section class="main-content">
+            <div class="input-section">
+                <div class="input-group">
+                    <label for="txtnum">Número base:</label>
+                    <input type="number" name="txtnum" id="txtnum" placeholder="Digite um número">
+                </div>
+                
+                <div class="input-group">
+                    <label for="range">Intervalo:</label>
+                    <div class="range-inputs">
+                        <input type="number" id="startRange" placeholder="Início" value="1">
+                        <span>até</span>
+                        <input type="number" id="endRange" placeholder="Fim" value="10">
+                    </div>
+                </div>
+                
+                <div class="button-group">
+                    <button class="btn generate" onclick="Tabuada()">
+                        <i class="fas fa-sync-alt"></i> Gerar Tabuada
+                    </button>
+                    <button class="btn clear" onclick="clearTable()">
+                        <i class="fas fa-trash-alt"></i> Limpar
+                    </button>
+                </div>
+            </div>
+            
+            <div class="result-section">
+                <div class="result-display">
+                    <select name="select" id="select" size="10">
+                        <option>Digite um número e clique em Gerar Tabuada</option>
+                    </select>
+                </div>
+                
+                <div class="additional-results">
+                    <div class="result-card">
+                        <h3>Soma Total</h3>
+                        <p id="totalSum">-</p>
+                    </div>
+                    <div class="result-card">
+                        <h3>Média</h3>
+                        <p id="average">-</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <p>Desenvolvido por <strong>Fabiano Braga</strong> | © <span id="currentYear"></span></p>
+            <div class="social-links">
+                <a href="https://github.com/Fabiano-Braga" class="social-link" target="_blank" rel="external"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/fabiano-matheus-57a378215/" target="_blank" rel="external" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.youtube.com/@zeroaocode" target="_blank" rel="external" class="social-link"><i class="fab fa-youtube"></i></a>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="script/gerador.js"></script>
+</body>
+</html>
