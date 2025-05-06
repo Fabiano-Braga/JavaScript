@@ -4,29 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Analizador de números</title>
+    <title>Analisador de Números</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="estilo/style.css">
 </head>
 <body>
-    <header><h1>Analizador de números</h1></header>
-    <section>
-
-        <div id="dados">
-            <p>Número (entre 1 e 100):
-                <input type="number" name="txtnum" id="txtnum"><input id="btnadd" type="button" value="Adicionar" onclick="adicionar()"></p>
-          
-            <select name="tab" id="tab" size="10px">
-
-            </select><br>
-            <input id="btnfinalizar" type="button" value="Finalizar" onclick="finalizar()"> <input id="btnzerar" type="button" value="Zerar Lista" onclick="Zerar()">
-        </div>
-        <div id="res">
-
-        </div>
-    </section>
-    <footer>
-        <p>Desenvolvido por <strong><a href="https://github.com/Fabiano-Braga" target="_blank">Fabiano Braga</a></strong></p>
-    </footer>
+    <div class="container animate__animated animate__fadeIn">
+        <header>
+            <h1><i class="fas fa-calculator"></i> Analisador de Números</h1>
+            <p class="subtitle">Insira números entre 1 e 100 para análise</p>
+        </header>
+        
+        <main>
+            <section class="input-section">
+                <div class="input-group">
+                    <label for="txtnum">Número (1-100):</label>
+                    <input type="number" name="txtnum" id="txtnum" placeholder="Digite um número" min="1" max="100">
+                    <button id="btnadd" class="btn btn-primary" onclick="adicionar()">
+                        <i class="fas fa-plus"></i> Adicionar
+                    </button>
+                </div>
+                
+                <div class="list-container">
+                    <h3>Números Adicionados:</h3>
+                    <div class="number-list" id="tab"></div>
+                    
+                    <div class="button-group">
+                        <button id="btnfinalizar" class="btn btn-success" onclick="finalizar()">
+                            <i class="fas fa-check"></i> Finalizar
+                        </button>
+                        <button id="btnzerar" class="btn btn-danger" onclick="Zerar()">
+                            <i class="fas fa-trash"></i> Limpar
+                        </button>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="results" id="res">
+                <h3><i class="fas fa-chart-bar"></i> Resultados</h3>
+                <div class="results-content" id="results-content">
+                    <p class="placeholder">Adicione números e clique em Finalizar para ver os resultados.</p>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>Desenvolvido por <strong><a href="https://github.com/Fabiano-Braga" target="_blank">Fabiano Braga</a></strong></p>
+        </footer>
+    </div>
 
     <script src="scripts/array.js"></script>
 </body>
